@@ -49,13 +49,13 @@ transform:translateY(-2px);
 /* HEADER */
 header{
 text-align:center;
-padding:80px 20px;
+padding:130px 20px;
 background:linear-gradient(to bottom,#001845,#0d1117);
 }
 
 .profile-img{
-width:180px;
-height:180px;
+width:190px;
+height:190px;
 border-radius:50%;
 object-fit:cover;
 border:5px solid #0077b6;
@@ -63,7 +63,7 @@ border:5px solid #0077b6;
 
 header h1{
 margin-top:20px;
-font-size:40px;
+font-size:42px;
 }
 
 header p{
@@ -74,26 +74,26 @@ font-size:18px;
 
 /* SECTION */
 section{
-width:85%;
-margin:30px auto;
+width:88%;
+margin:35px auto;
 background:#161b22;
-padding:35px;
-border-radius:20px;
-box-shadow:0 0 15px rgba(0,0,0,0.4);
+padding:45px;
+border-radius:25px;
+box-shadow:0 0 20px rgba(0,0,0,0.4);
 }
 
 h2{
 color:#4cc9f0;
-margin-bottom:15px;
+margin-bottom:20px;
 font-size:28px;
 }
 
 p{
-line-height:1.8;
+line-height:1.9;
 color:#d9d9d9;
 }
 
-/* PENDIDIKAN */
+/* BOX */
 .school-box{
 background:#1f2937;
 padding:18px;
@@ -155,15 +155,14 @@ margin-top:30px;
 
 <body>
 
-<!-- MENU -->
 <nav>
 <a href="#tentang">Tentang</a>
-<a href="#pendidikan">Riwayat Pendidikan</a>
+<a href="#pendidikan">Pendidikan</a>
+<a href="#pengalaman">Pengalaman</a>
 <a href="#keahlian">Keahlian</a>
 <a href="#kontak">Kontak</a>
 </nav>
 
-<!-- HEADER -->
 <header>
 
 <img src="profil.jpeg" alt="Foto Profil" class="profile-img">
@@ -177,22 +176,37 @@ Universitas Lampung
 
 </header>
 
-<!-- TENTANG -->
+<section>
+
+<h2>Profil Singkat</h2>
+
+<p>
+Saya merupakan mahasiswa Pendidikan Teknologi Informasi
+di Universitas Lampung yang memiliki ketertarikan
+dalam bidang teknologi, desain digital, serta
+pengembangan website.
+</p>
+
+<p>
+Saya memiliki minat pada pengembangan website,
+desain antarmuka (UI), serta penggunaan berbagai
+tools digital seperti HTML, CSS, JavaScript,
+Figma, dan GitHub.
+</p>
+
+</section>
+
 <section id="tentang">
 
 <h2>Tentang Saya</h2>
 
 <p>
 Halo, saya <b>Tyas Syafa Pratiwi</b>,
-mahasiswa Program Studi
-<b>Pendidikan Teknologi Informasi</b>
+mahasiswa Program Studi Pendidikan Teknologi Informasi
 di Universitas Lampung.
-Saya memiliki minat besar dalam bidang
-teknologi, desain digital, serta
-pengembangan website.
+Saya memiliki minat besar dalam bidang teknologi,
+desain digital, serta pengembangan website.
 </p>
-
-<br>
 
 <p>
 Saya senang mempelajari hal-hal baru,
@@ -204,34 +218,22 @@ digital untuk menciptakan tampilan yang
 menarik dan interaktif.
 </p>
 
-<br>
-
 <p>
 Saya percaya bahwa pembelajaran yang terus
 dikembangkan akan membantu saya menjadi
-individu yang lebih baik di bidang
-teknologi informasi, baik secara akademik
-maupun keterampilan praktis.
+individu yang lebih baik di bidang teknologi
+informasi, baik secara akademik maupun praktis.
 </p>
 
 </section>
 
-<!-- RIWAYAT PENDIDIKAN -->
 <section id="pendidikan">
 
 <h2>Riwayat Pendidikan</h2>
 
-<div class="school-box">
-<b>SDN 1 Kesumajaya</b>
-</div>
-
-<div class="school-box">
-<b>SMPN 2 Bekri</b>
-</div>
-
-<div class="school-box">
-<b>SMKN 1 Bumi Ratu Nuban</b>
-</div>
+<div class="school-box"><b>SDN 1 Kesumajaya</b></div>
+<div class="school-box"><b>SMPN 2 Bekri</b></div>
+<div class="school-box"><b>SMKN 1 Bumi Ratu Nuban</b></div>
 
 <div class="school-box">
 <b>Universitas Lampung</b><br>
@@ -240,7 +242,26 @@ Pendidikan Teknologi Informasi
 
 </section>
 
-<!-- KEAHLIAN -->
+<section id="pengalaman">
+
+<h2>Pengalaman & Aktivitas</h2>
+
+<div class="school-box">
+Mempelajari pengembangan website
+menggunakan HTML, CSS, dan JavaScript.
+</div>
+
+<div class="school-box">
+Membuat desain sederhana menggunakan Figma.
+</div>
+
+<div class="school-box">
+Mengelola dan menyimpan project coding
+menggunakan GitHub.
+</div>
+
+</section>
+
 <section id="keahlian">
 
 <h2>Keahlian</h2>
@@ -249,98 +270,59 @@ Pendidikan Teknologi Informasi
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 target="_blank" class="skill-card">
-
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
-
 <h3>JavaScript</h3>
-
-<p>
-Bahasa pemrograman untuk membuat
-website menjadi lebih interaktif.
-</p>
-
+<p>Bahasa pemrograman untuk membuat website interaktif.</p>
 </a>
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
 target="_blank" class="skill-card">
-
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png">
-
 <h3>HTML</h3>
-
-<p>
-Digunakan untuk membuat struktur
-dan kerangka website.
-</p>
-
+<p>Digunakan untuk struktur website.</p>
 </a>
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
 target="_blank" class="skill-card">
-
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png">
-
 <h3>CSS</h3>
-
-<p>
-Digunakan untuk mempercantik
-tampilan website.
-</p>
-
+<p>Digunakan untuk mempercantik tampilan website.</p>
 </a>
 
 <a href="https://www.figma.com/"
 target="_blank" class="skill-card">
-
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png">
-
 <h3>Figma</h3>
-
-<p>
-Digunakan untuk membuat desain
-UI/UX dan prototype.
-</p>
-
+<p>Digunakan untuk desain UI/UX.</p>
 </a>
 
 <a href="https://github.com/"
 target="_blank" class="skill-card">
-
 <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png">
-
 <h3>GitHub</h3>
-
-<p>
-Digunakan untuk menyimpan dan
-mengelola project coding.
-</p>
-
+<p>Digunakan untuk menyimpan project coding.</p>
 </a>
 
 </div>
 
 </section>
 
-<!-- KONTAK -->
 <section id="kontak">
 
 <h2>Kontak</h2>
 
 <div class="contact-box">
-📧 Email:
-<br>
+📧 Email<br>
 2513025042@students.unila.ac.id
 </div>
 
 <div class="contact-box">
-📷 Instagram:
-<br>
+📷 Instagram<br>
 @TYSSYFA
 </div>
 
 <div class="contact-box">
-💼 LinkedIn:
-<br>
+💼 LinkedIn<br>
 Tyas Syafa
 </div>
 
