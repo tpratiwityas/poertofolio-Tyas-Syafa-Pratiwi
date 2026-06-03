@@ -137,9 +137,31 @@ color:#4cc9f0;
 /* KONTAK */
 .contact-box{
 background:#1f2937;
-padding:18px;
-border-radius:15px;
-margin-top:10px;
+padding:25px;
+border-radius:18px;
+margin-top:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.contact-box:hover{
+transform:translateY(-5px);
+background:#023e8a;
+}
+
+.contact-icon{
+width:38px;
+margin-bottom:10px;
+filter: brightness(0) invert(1);
+}
+
+.contact-link{
+color:#d9d9d9;
+text-decoration:none;
+}
+
+.contact-link:hover{
+color:#4cc9f0;
 }
 
 /* FOOTER */
@@ -165,12 +187,12 @@ margin-top:30px;
 
 <header>
 
-<img src="profil.jpeg" alt="Foto Profil" class="profile-img">
+<img src="profil.jpeg" class="profile-img">
 
 <h1>Tyas Syafa Pratiwi</h1>
 
 <p>
-Mahasiswa Pendidikan Teknologi Informasi
+Mahasiswa Pendidikan Teknologi Informasi<br>
 Universitas Lampung
 </p>
 
@@ -181,17 +203,13 @@ Universitas Lampung
 <h2>Profil Singkat</h2>
 
 <p>
-Saya merupakan mahasiswa Pendidikan Teknologi Informasi
-di Universitas Lampung yang memiliki ketertarikan
-dalam bidang teknologi, desain digital, serta
-pengembangan website.
+Saya mahasiswa Pendidikan Teknologi Informasi yang memiliki minat
+di bidang teknologi, desain digital, dan pengembangan website.
 </p>
 
 <p>
-Saya memiliki minat pada pengembangan website,
-desain antarmuka (UI), serta penggunaan berbagai
-tools digital seperti HTML, CSS, JavaScript,
-Figma, dan GitHub.
+Saya terus belajar HTML, CSS, JavaScript, Figma, dan GitHub
+untuk meningkatkan kemampuan saya di dunia teknologi.
 </p>
 
 </section>
@@ -201,28 +219,14 @@ Figma, dan GitHub.
 <h2>Tentang Saya</h2>
 
 <p>
-Halo, saya <b>Tyas Syafa Pratiwi</b>,
-mahasiswa Program Studi Pendidikan Teknologi Informasi
-di Universitas Lampung.
-Saya memiliki minat besar dalam bidang teknologi,
-desain digital, serta pengembangan website.
+Halo, saya <b>Tyas Syafa Pratiwi</b>.
+Saya mahasiswa Universitas Lampung jurusan Pendidikan Teknologi Informasi.
+Saya memiliki ketertarikan dalam bidang web development dan desain digital.
 </p>
 
 <p>
-Saya senang mempelajari hal-hal baru,
-mengembangkan keterampilan di bidang IT,
-dan mengeksplorasi berbagai teknologi digital.
-Saya tertarik pada desain antarmuka (UI),
-pengembangan website, serta penggunaan tools
-digital untuk menciptakan tampilan yang
-menarik dan interaktif.
-</p>
-
-<p>
-Saya percaya bahwa pembelajaran yang terus
-dikembangkan akan membantu saya menjadi
-individu yang lebih baik di bidang teknologi
-informasi, baik secara akademik maupun praktis.
+Saya senang belajar hal baru dan mengembangkan kemampuan di bidang teknologi,
+terutama dalam pembuatan website yang menarik dan interaktif.
 </p>
 
 </section>
@@ -231,14 +235,10 @@ informasi, baik secara akademik maupun praktis.
 
 <h2>Riwayat Pendidikan</h2>
 
-<div class="school-box"><b>SDN 1 Kesumajaya</b></div>
-<div class="school-box"><b>SMPN 2 Bekri</b></div>
-<div class="school-box"><b>SMKN 1 Bumi Ratu Nuban</b></div>
-
-<div class="school-box">
-<b>Universitas Lampung</b><br>
-Pendidikan Teknologi Informasi
-</div>
+<div class="school-box">SDN 1 Kesumajaya</div>
+<div class="school-box">SMPN 2 Bekri</div>
+<div class="school-box">SMKN 1 Bumi Ratu Nuban</div>
+<div class="school-box">Universitas Lampung - Pendidikan Teknologi Informasi</div>
 
 </section>
 
@@ -246,19 +246,9 @@ Pendidikan Teknologi Informasi
 
 <h2>Pengalaman & Aktivitas</h2>
 
-<div class="school-box">
-Mempelajari pengembangan website
-menggunakan HTML, CSS, dan JavaScript.
-</div>
-
-<div class="school-box">
-Membuat desain sederhana menggunakan Figma.
-</div>
-
-<div class="school-box">
-Mengelola dan menyimpan project coding
-menggunakan GitHub.
-</div>
+<div class="school-box">Belajar HTML, CSS, JavaScript</div>
+<div class="school-box">Membuat desain UI menggunakan Figma</div>
+<div class="school-box">Menggunakan GitHub untuk project</div>
 
 </section>
 
@@ -268,41 +258,39 @@ menggunakan GitHub.
 
 <div class="skills-container">
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-target="_blank" class="skill-card">
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
-<h3>JavaScript</h3>
-<p>Bahasa pemrograman untuk membuat website interaktif.</p>
-</a>
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-target="_blank" class="skill-card">
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="skill-card" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png">
 <h3>HTML</h3>
-<p>Digunakan untuk struktur website.</p>
+<p>Membuat struktur website</p>
 </a>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-target="_blank" class="skill-card">
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="skill-card" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png">
 <h3>CSS</h3>
-<p>Digunakan untuk mempercantik tampilan website.</p>
+<p>Mempercantik tampilan website</p>
 </a>
 
-<a href="https://www.figma.com/"
-target="_blank" class="skill-card">
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="skill-card" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+<h3>JavaScript</h3>
+<p>Membuat website interaktif</p>
+</a>
+
+<a href="https://www.figma.com/" class="skill-card" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png">
 <h3>Figma</h3>
-<p>Digunakan untuk desain UI/UX.</p>
+<p>Desain UI/UX</p>
 </a>
 
-<a href="https://github.com/"
-target="_blank" class="skill-card">
+<a href="https://github.com/" class="skill-card" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png">
 <h3>GitHub</h3>
-<p>Digunakan untuk menyimpan project coding.</p>
+<p>Manajemen project coding</p>
 </a>
 
+</div>
+
+</section>
 
 <section id="kontak">
 
@@ -310,40 +298,43 @@ target="_blank" class="skill-card">
 
 <div class="contact-box">
 
-<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
-width="28">
+<a href="mailto:2513025042@students.unila.ac.id">
+<img src="https://img.icons8.com/ios-filled/100/ffffff/gmail.png" class="contact-icon">
+</a>
 
-<br><br>
-
-<b>Email</b>
 <br>
+<b>Email</b><br>
+<a class="contact-link" href="mailto:2513025042@students.unila.ac.id">
 2513025042@students.unila.ac.id
+</a>
 
 </div>
 
 <div class="contact-box">
 
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-width="28">
+<a href="https://instagram.com/tyssyfa" target="_blank">
+<img src="https://img.icons8.com/ios-filled/100/ffffff/instagram-new.png" class="contact-icon">
+</a>
 
-<br><br>
-
-<b>Instagram</b>
 <br>
+<b>Instagram</b><br>
+<a class="contact-link" href="https://instagram.com/tyssyfa" target="_blank">
 @TYSSYFA
+</a>
 
 </div>
 
 <div class="contact-box">
 
-<img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"
-width="28">
+<a href="https://linkedin.com" target="_blank">
+<img src="https://img.icons8.com/ios-filled/100/ffffff/linkedin.png" class="contact-icon">
+</a>
 
-<br><br>
-
-<b>LinkedIn</b>
 <br>
+<b>LinkedIn</b><br>
+<a class="contact-link" href="https://linkedin.com" target="_blank">
 Tyas Syafa
+</a>
 
 </div>
 
