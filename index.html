@@ -13,30 +13,31 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 scroll-behavior:smooth;
+font-family:Arial,sans-serif;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#0d1117;
+background:linear-gradient(135deg,#0f172a,#1e1b4b,#0f172a);
 color:white;
 }
 
-/* ===== NAVBAR ===== */
+/* ===== NAV ===== */
 nav{
-background:#800000;
 position:sticky;
 top:0;
 z-index:1000;
-padding:18px;
+background:rgba(20,20,60,0.8);
+backdrop-filter:blur(10px);
+padding:15px;
 text-align:center;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:8px;
-padding:12px 18px;
-background:#a30000;
+margin:6px;
+padding:10px 16px;
+background:linear-gradient(45deg,#4f46e5,#06b6d4);
 border-radius:12px;
 display:inline-block;
 transition:0.3s;
@@ -44,139 +45,138 @@ font-weight:bold;
 }
 
 nav a:hover{
-background:#ff1a1a;
-transform:translateY(-2px);
+transform:scale(1.05);
+background:linear-gradient(45deg,#06b6d4,#9333ea);
 }
 
 /* ===== HEADER ===== */
 header{
 text-align:center;
 padding:120px 20px;
-background:linear-gradient(to bottom,#800000,#0d1117);
+background:radial-gradient(circle,#312e81,#0f172a);
 }
 
 .profile-img{
-width:180px;
-height:180px;
+width:170px;
+height:170px;
 border-radius:50%;
+border:4px solid #38bdf8;
 object-fit:cover;
-border:5px solid #ff1a1a;
 }
 
 header h1{
+font-size:40px;
 margin-top:20px;
-font-size:44px;
 }
 
 header p{
+color:#cbd5e1;
 margin-top:10px;
-color:#ddd;
-font-size:18px;
 }
 
 /* ===== SECTION ===== */
 section{
-width:88%;
-margin:35px auto;
-background:#161b22;
-padding:45px;
-border-radius:25px;
-box-shadow:0 0 20px rgba(0,0,0,0.5);
+width:90%;
+margin:30px auto;
+background:rgba(255,255,255,0.05);
+padding:35px;
+border-radius:20px;
+backdrop-filter:blur(8px);
+box-shadow:0 0 25px rgba(0,0,0,0.3);
 }
 
 h2{
-color:#ff4d4d;
-margin-bottom:20px;
-font-size:28px;
+color:#38bdf8;
+margin-bottom:15px;
 }
 
+/* ===== TEXT ===== */
 p{
-line-height:1.9;
-color:#d9d9d9;
+color:#e2e8f0;
+line-height:1.8;
 }
 
-/* ===== EDUCATION (TIDAK DIKLIK) ===== */
+/* ===== EDUCATION (NO CLICK) ===== */
 .school-box{
-background:#1f2937;
-padding:18px;
-border-radius:15px;
-margin-top:12px;
+background:linear-gradient(45deg,#1e293b,#334155);
+padding:15px;
+margin-top:10px;
+border-radius:12px;
 transition:0.3s;
 }
 
 .school-box:hover{
-background:#800000;
-transform:translateY(-3px);
+transform:translateX(5px);
+background:linear-gradient(45deg,#334155,#475569);
 }
 
-/* ===== SKILL ===== */
+/* ===== SKILLS ===== */
 .skills-container{
 display:flex;
 flex-wrap:wrap;
-gap:20px;
+gap:15px;
 justify-content:center;
 }
 
 .skill-card{
-background:#1f2937;
-width:220px;
-padding:20px;
-border-radius:18px;
+width:200px;
+padding:18px;
+border-radius:15px;
+background:linear-gradient(45deg,#1f2937,#111827);
+text-align:center;
 text-decoration:none;
 color:white;
-text-align:center;
 transition:0.3s;
+border:1px solid #334155;
 }
 
 .skill-card:hover{
 transform:translateY(-8px);
-background:#800000;
+box-shadow:0 0 15px #38bdf8;
 }
 
 .skill-card h3{
-color:#ff4d4d;
+color:#38bdf8;
 }
 
-/* ===== TUGAS ===== */
+/* ===== TASK ===== */
 #tugas .school-box{
-transition:0.3s;
 cursor:pointer;
 }
 
-#tugas .school-box:hover{
-background:#800000;
-transform:translateY(-5px);
-}
-
 #tugas a{
-text-decoration:none;
 color:white;
+text-decoration:none;
 font-weight:bold;
 display:block;
 }
 
-/* ===== KONTAK ===== */
+#tugas .school-box:hover{
+background:linear-gradient(45deg,#2563eb,#9333ea);
+}
+
+/* ===== CONTACT ===== */
 .contact-box{
-background:#1f2937;
-padding:25px;
-border-radius:18px;
-margin-top:15px;
+background:linear-gradient(45deg,#1f2937,#0f172a);
+padding:20px;
+margin-top:10px;
+border-radius:15px;
 text-align:center;
 transition:0.3s;
 }
 
 .contact-box:hover{
-background:#800000;
-transform:translateY(-5px);
+transform:scale(1.03);
+background:linear-gradient(45deg,#334155,#1e293b);
 }
 
 /* ===== FOOTER ===== */
 footer{
-background:#800000;
 text-align:center;
 padding:20px;
 margin-top:30px;
-font-weight:bold;
+background:#0f172a;
+color:#94a3b8;
 }
 
 </style>
@@ -204,30 +204,26 @@ font-weight:bold;
 <!-- PROFIL -->
 <section>
 <h2>Profil Singkat</h2>
-
 <p>
-Saya adalah mahasiswa Pendidikan Teknologi Informasi yang memiliki minat besar di bidang teknologi, khususnya pengembangan website, desain digital, dan pemrograman. Saya senang mengeksplorasi hal baru dalam dunia teknologi dan terus berusaha meningkatkan kemampuan saya agar dapat menghasilkan karya yang bermanfaat.
+Saya mahasiswa Pendidikan Teknologi Informasi yang memiliki minat besar di bidang teknologi, terutama pengembangan website, desain UI/UX, dan pemrograman modern.
 </p>
-
 <p>
-Saat ini saya sedang fokus mempelajari HTML, CSS, JavaScript, serta tools seperti Figma dan GitHub. Tujuan saya adalah mampu membangun website yang tidak hanya berfungsi, tetapi juga memiliki desain yang menarik dan mudah digunakan oleh pengguna.
+Saya sedang mengembangkan kemampuan di HTML, CSS, JavaScript, Figma, dan GitHub untuk membuat project yang lebih profesional dan interaktif.
 </p>
 </section>
 
 <!-- TENTANG -->
 <section id="tentang">
 <h2>Tentang Saya</h2>
-
 <p>
-Halo, saya <b>Tyas Syafa Pratiwi</b>, mahasiswa Universitas Lampung jurusan Pendidikan Teknologi Informasi.
+Halo, saya <b>Tyas Syafa Pratiwi</b> mahasiswa Universitas Lampung.
 </p>
-
 <p>
-Saya memiliki ketertarikan besar dalam dunia web development dan desain UI/UX. Saya senang belajar secara mandiri maupun melalui proyek kecil yang membantu saya memahami teknologi secara lebih dalam dan praktis.
+Saya suka belajar teknologi, desain, dan membuat website yang menarik serta mudah digunakan.
 </p>
 </section>
 
-<!-- PENDIDIKAN (TIDAK DIKLIK) -->
+<!-- PENDIDIKAN (NO CLICK) -->
 <section id="pendidikan">
 <h2>Riwayat Pendidikan</h2>
 
@@ -241,13 +237,10 @@ Saya memiliki ketertarikan besar dalam dunia web development dan desain UI/UX. S
 <!-- PENGALAMAN -->
 <section id="pengalaman">
 <h2>Pengalaman</h2>
-
 <p>
-Saya memiliki pengalaman dalam mempelajari dasar pengembangan web menggunakan HTML, CSS, dan JavaScript. Dari proses tersebut saya memahami bagaimana sebuah website dibangun mulai dari struktur hingga tampilan visualnya.
-</p>
-
-<p>
-Selain itu saya juga pernah membuat desain UI menggunakan Figma dan menggunakan GitHub untuk menyimpan serta mengelola project tugas dan latihan pemrograman.
+Belajar HTML, CSS, JavaScript untuk membuat website.
+Menggunakan Figma untuk desain UI/UX.
+Menggunakan GitHub untuk menyimpan project.
 </p>
 </section>
 
@@ -257,23 +250,23 @@ Selain itu saya juga pernah membuat desain UI menggunakan Figma dan menggunakan 
 
 <div class="skills-container">
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="skill-card">
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="skill-card" target="_blank">
 <h3>HTML</h3>
 </a>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill-card">
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="skill-card" target="_blank">
 <h3>CSS</h3>
 </a>
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="skill-card">
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="skill-card" target="_blank">
 <h3>JavaScript</h3>
 </a>
 
-<a href="https://www.figma.com/" target="_blank" class="skill-card">
+<a href="https://www.figma.com/" class="skill-card" target="_blank">
 <h3>Figma</h3>
 </a>
 
-<a href="https://github.com/" target="_blank" class="skill-card">
+<a href="https://github.com/" class="skill-card" target="_blank">
 <h3>GitHub</h3>
 </a>
 
