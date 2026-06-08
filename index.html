@@ -100,9 +100,22 @@ background:#1f2937;
 padding:18px;
 border-radius:15px;
 margin-top:12px;
+transition:0.3s;
 }
 
-/* ===== SKILLS ===== */
+.school-box:hover{
+background:#023e8a;
+transform:translateY(-5px);
+}
+
+.school-box a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+display:block;
+}
+
+/* ===== SKILL ===== */
 .skills-container{
 display:flex;
 flex-wrap:wrap;
@@ -118,6 +131,7 @@ border-radius:18px;
 text-decoration:none;
 color:white;
 transition:0.3s;
+text-align:center;
 }
 
 .skill-card:hover{
@@ -125,27 +139,9 @@ transform:translateY(-8px);
 background:#023e8a;
 }
 
-/* ===== TUGAS ===== */
-#tugas{
-text-align:center;
-}
-
-#tugas .school-box{
-transition:0.3s;
-cursor:pointer;
-}
-
-#tugas .school-box:hover{
-background:#023e8a;
-transform:translateY(-5px);
-}
-
-#tugas a{
-text-decoration:none;
-color:white;
-font-weight:bold;
-display:block;
-padding:5px;
+.skill-card h3{
+color:#4cc9f0;
+margin-bottom:8px;
 }
 
 /* ===== KONTAK ===== */
@@ -161,11 +157,6 @@ transition:0.3s;
 .contact-box:hover{
 transform:translateY(-5px);
 background:#023e8a;
-}
-
-.contact-link{
-color:#d9d9d9;
-text-decoration:none;
 }
 
 /* ===== FOOTER ===== */
@@ -206,14 +197,27 @@ Universitas Lampung
 <!-- PROFIL -->
 <section>
 <h2>Profil Singkat</h2>
-<p>Saya mahasiswa Pendidikan Teknologi Informasi yang memiliki minat di bidang teknologi, desain digital, dan pengembangan website.</p>
-<p>Saya terus belajar HTML, CSS, JavaScript, Figma, dan GitHub.</p>
+
+<p>
+Saya adalah mahasiswa Pendidikan Teknologi Informasi yang memiliki minat besar di bidang teknologi, khususnya pengembangan website, desain digital, dan pemrograman.
+</p>
+
+<p>
+Saya terus belajar HTML, CSS, JavaScript, Figma, dan GitHub untuk meningkatkan kemampuan saya dalam dunia teknologi modern.
+</p>
 </section>
 
 <!-- TENTANG -->
 <section id="tentang">
 <h2>Tentang Saya</h2>
-<p>Halo, saya <b>Tyas Syafa Pratiwi</b>. Saya mahasiswa Universitas Lampung.</p>
+
+<p>
+Halo, saya <b>Tyas Syafa Pratiwi</b>. Saya mahasiswa Universitas Lampung jurusan Pendidikan Teknologi Informasi.
+</p>
+
+<p>
+Saya memiliki semangat belajar tinggi dalam bidang web development dan desain UI/UX.
+</p>
 </section>
 
 <!-- PENDIDIKAN -->
@@ -224,6 +228,7 @@ Universitas Lampung
 <div class="school-box">SMPN 2 Bekri</div>
 <div class="school-box">SMKN 1 Bumi Ratu Nuban</div>
 <div class="school-box">Universitas Lampung</div>
+
 </section>
 
 <!-- PENGALAMAN -->
@@ -233,32 +238,77 @@ Universitas Lampung
 <div class="school-box">Belajar HTML, CSS, JavaScript</div>
 <div class="school-box">Membuat desain UI Figma</div>
 <div class="school-box">GitHub Project</div>
+
 </section>
 
 <!-- KEAHLIAN -->
 <section id="keahlian">
 <h2>Keahlian</h2>
 
-<div class="skill-card">HTML</div>
-<div class="skill-card">CSS</div>
-<div class="skill-card">JavaScript</div>
+<div class="skills-container">
 
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="skill-card" target="_blank">
+<h3>HTML</h3>
+</a>
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="skill-card" target="_blank">
+<h3>CSS</h3>
+</a>
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="skill-card" target="_blank">
+<h3>JavaScript</h3>
+</a>
+
+<a href="https://www.figma.com/" class="skill-card" target="_blank">
+<h3>Figma</h3>
+</a>
+
+<a href="https://github.com/" class="skill-card" target="_blank">
+<h3>GitHub</h3>
+</a>
+
+</div>
 </section>
 
 <!-- TUGAS -->
 <section id="tugas">
-<h2>Pengumpulan Tugas</h2>
+<h2>Pengumpulan Tugas & Quiz</h2>
 
-<div class="school-box"><a href="https://forms.gle/tqH8jR9XyEwcRmCd8" target="_blank">Tugas 1</a></div>
-<div class="school-box"><a href="https://forms.gle/sVzFzyiTrRiwdfZQA" target="_blank">Tugas 2</a></div>
-<div class="school-box"><a href="https://forms.gle/B3v2jx5kThcZjaqN8" target="_blank">Tugas 3</a></div>
-<div class="school-box"><a href="https://forms.gle/w36GHvNoAqp8dr1p7" target="_blank">Tugas 4</a></div>
-<div class="school-box"><a href="https://forms.gle/JPLFzn9jZKk8AEK68" target="_blank">Tugas 5</a></div>
+<div class="school-box">
+<a href="https://forms.gle/tqH8jR9XyEwcRmCd8" target="_blank">Tugas 1</a>
+</div>
 
-<div class="school-box"><a href="https://youtu.be/0v_u6QOmILY?si=9saLM1u9LO5EnCkm" target="_blank">Quiz 1</a></div>
-<div class="school-box"><a href="https://youtu.be/vFZ3e9IN6U0?feature=shared" target="_blank">Quiz 2</a></div>
-<div class="school-box"><a href="https://youtu.be/p6d9SusGWrw?feature=shared" target="_blank">Quiz 3</a></div>
-<div class="school-box"><a href="https://youtu.be/rgw2ERJoa40?feature=shared" target="_blank">Quiz 4</a></div>
+<div class="school-box">
+<a href="https://forms.gle/sVzFzyiTrRiwdfZQA" target="_blank">Tugas 2</a>
+</div>
+
+<div class="school-box">
+<a href="https://forms.gle/B3v2jx5kThcZjaqN8" target="_blank">Tugas 3</a>
+</div>
+
+<div class="school-box">
+<a href="https://forms.gle/w36GHvNoAqp8dr1p7" target="_blank">Tugas 4</a>
+</div>
+
+<div class="school-box">
+<a href="https://forms.gle/JPLFzn9jZKk8AEK68" target="_blank">Tugas 5</a>
+</div>
+
+<div class="school-box">
+<a href="https://youtu.be/0v_u6QOmILY?si=9saLM1u9LO5EnCkm" target="_blank">Quiz 1</a>
+</div>
+
+<div class="school-box">
+<a href="https://youtu.be/vFZ3e9IN6U0?feature=shared" target="_blank">Quiz 2</a>
+</div>
+
+<div class="school-box">
+<a href="https://youtu.be/p6d9SusGWrw?feature=shared" target="_blank">Quiz 3</a>
+</div>
+
+<div class="school-box">
+<a href="https://youtu.be/rgw2ERJoa40?feature=shared" target="_blank">Quiz 4</a>
+</div>
 
 </section>
 
