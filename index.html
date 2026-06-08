@@ -23,7 +23,7 @@ color:white;
 
 /* ===== NAVBAR ===== */
 nav{
-background:#001845;
+background:#800000;
 position:sticky;
 top:0;
 z-index:1000;
@@ -36,40 +36,41 @@ color:white;
 text-decoration:none;
 margin:8px;
 padding:12px 18px;
-background:#023e8a;
-border-radius:10px;
+background:#a30000;
+border-radius:12px;
 display:inline-block;
 transition:0.3s;
+font-weight:bold;
 }
 
 nav a:hover{
-background:#0077b6;
+background:#ff1a1a;
 transform:translateY(-2px);
 }
 
 /* ===== HEADER ===== */
 header{
 text-align:center;
-padding:130px 20px;
-background:linear-gradient(to bottom,#001845,#0d1117);
+padding:120px 20px;
+background:linear-gradient(to bottom,#800000,#0d1117);
 }
 
 .profile-img{
-width:190px;
-height:190px;
+width:180px;
+height:180px;
 border-radius:50%;
 object-fit:cover;
-border:5px solid #0077b6;
+border:5px solid #ff1a1a;
 }
 
 header h1{
 margin-top:20px;
-font-size:42px;
+font-size:44px;
 }
 
 header p{
-margin-top:12px;
-color:#d6d6d6;
+margin-top:10px;
+color:#ddd;
 font-size:18px;
 }
 
@@ -80,11 +81,11 @@ margin:35px auto;
 background:#161b22;
 padding:45px;
 border-radius:25px;
-box-shadow:0 0 20px rgba(0,0,0,0.4);
+box-shadow:0 0 20px rgba(0,0,0,0.5);
 }
 
 h2{
-color:#4cc9f0;
+color:#ff4d4d;
 margin-bottom:20px;
 font-size:28px;
 }
@@ -94,7 +95,7 @@ line-height:1.9;
 color:#d9d9d9;
 }
 
-/* ===== BOX ===== */
+/* ===== EDUCATION (TIDAK DIKLIK) ===== */
 .school-box{
 background:#1f2937;
 padding:18px;
@@ -104,15 +105,8 @@ transition:0.3s;
 }
 
 .school-box:hover{
-background:#023e8a;
-transform:translateY(-5px);
-}
-
-.school-box a{
-text-decoration:none;
-color:white;
-font-weight:bold;
-display:block;
+background:#800000;
+transform:translateY(-3px);
 }
 
 /* ===== SKILL ===== */
@@ -130,17 +124,35 @@ padding:20px;
 border-radius:18px;
 text-decoration:none;
 color:white;
-transition:0.3s;
 text-align:center;
+transition:0.3s;
 }
 
 .skill-card:hover{
 transform:translateY(-8px);
-background:#023e8a;
+background:#800000;
 }
 
 .skill-card h3{
-color:#4cc9f0;
+color:#ff4d4d;
+}
+
+/* ===== TUGAS ===== */
+#tugas .school-box{
+transition:0.3s;
+cursor:pointer;
+}
+
+#tugas .school-box:hover{
+background:#800000;
+transform:translateY(-5px);
+}
+
+#tugas a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+display:block;
 }
 
 /* ===== KONTAK ===== */
@@ -154,16 +166,17 @@ transition:0.3s;
 }
 
 .contact-box:hover{
+background:#800000;
 transform:translateY(-5px);
-background:#023e8a;
 }
 
 /* ===== FOOTER ===== */
 footer{
-background:#001845;
+background:#800000;
 text-align:center;
 padding:20px;
 margin-top:30px;
+font-weight:bold;
 }
 
 </style>
@@ -171,6 +184,7 @@ margin-top:30px;
 
 <body>
 
+<!-- NAV -->
 <nav>
 <a href="#tentang">Tentang</a>
 <a href="#pendidikan">Pendidikan</a>
@@ -180,47 +194,64 @@ margin-top:30px;
 <a href="#kontak">Kontak</a>
 </nav>
 
+<!-- HEADER -->
 <header>
 <img src="profil.jpeg" class="profile-img">
 <h1>Tyas Syafa Pratiwi</h1>
 <p>Mahasiswa Pendidikan Teknologi Informasi<br>Universitas Lampung</p>
 </header>
 
+<!-- PROFIL -->
 <section>
 <h2>Profil Singkat</h2>
+
 <p>
-Saya adalah mahasiswa Pendidikan Teknologi Informasi yang memiliki minat besar di bidang teknologi, khususnya pengembangan website, desain digital, dan pemrograman.
+Saya adalah mahasiswa Pendidikan Teknologi Informasi yang memiliki minat besar di bidang teknologi, khususnya pengembangan website, desain digital, dan pemrograman. Saya senang mengeksplorasi hal baru dalam dunia teknologi dan terus berusaha meningkatkan kemampuan saya agar dapat menghasilkan karya yang bermanfaat.
 </p>
+
 <p>
-Saya terus mempelajari HTML, CSS, JavaScript, Figma, dan GitHub untuk meningkatkan kemampuan saya dalam dunia teknologi modern.
+Saat ini saya sedang fokus mempelajari HTML, CSS, JavaScript, serta tools seperti Figma dan GitHub. Tujuan saya adalah mampu membangun website yang tidak hanya berfungsi, tetapi juga memiliki desain yang menarik dan mudah digunakan oleh pengguna.
 </p>
 </section>
 
+<!-- TENTANG -->
 <section id="tentang">
 <h2>Tentang Saya</h2>
+
 <p>
-Halo, saya <b>Tyas Syafa Pratiwi</b>. Saya mahasiswa Universitas Lampung jurusan Pendidikan Teknologi Informasi.
+Halo, saya <b>Tyas Syafa Pratiwi</b>, mahasiswa Universitas Lampung jurusan Pendidikan Teknologi Informasi.
 </p>
+
 <p>
-Saya memiliki semangat belajar tinggi dalam bidang web development dan desain UI/UX.
+Saya memiliki ketertarikan besar dalam dunia web development dan desain UI/UX. Saya senang belajar secara mandiri maupun melalui proyek kecil yang membantu saya memahami teknologi secara lebih dalam dan praktis.
 </p>
 </section>
 
+<!-- PENDIDIKAN (TIDAK DIKLIK) -->
 <section id="pendidikan">
 <h2>Riwayat Pendidikan</h2>
+
 <div class="school-box">SDN 1 Kesumajaya</div>
 <div class="school-box">SMPN 2 Bekri</div>
 <div class="school-box">SMKN 1 Bumi Ratu Nuban</div>
-<div class="school-box">Universitas Lampung</div>
+<div class="school-box">Universitas Lampung - Pendidikan Teknologi Informasi</div>
+
 </section>
 
+<!-- PENGALAMAN -->
 <section id="pengalaman">
 <h2>Pengalaman</h2>
+
 <p>
-Saya memiliki pengalaman dalam mempelajari HTML, CSS, dan JavaScript. Saya juga pernah membuat desain UI menggunakan Figma serta mengelola project menggunakan GitHub.
+Saya memiliki pengalaman dalam mempelajari dasar pengembangan web menggunakan HTML, CSS, dan JavaScript. Dari proses tersebut saya memahami bagaimana sebuah website dibangun mulai dari struktur hingga tampilan visualnya.
+</p>
+
+<p>
+Selain itu saya juga pernah membuat desain UI menggunakan Figma dan menggunakan GitHub untuk menyimpan serta mengelola project tugas dan latihan pemrograman.
 </p>
 </section>
 
+<!-- KEAHLIAN -->
 <section id="keahlian">
 <h2>Keahlian</h2>
 
@@ -249,6 +280,7 @@ Saya memiliki pengalaman dalam mempelajari HTML, CSS, dan JavaScript. Saya juga 
 </div>
 </section>
 
+<!-- TUGAS -->
 <section id="tugas">
 <h2>Pengumpulan Tugas & Quiz</h2>
 
@@ -265,8 +297,10 @@ Saya memiliki pengalaman dalam mempelajari HTML, CSS, dan JavaScript. Saya juga 
 
 </section>
 
+<!-- KONTAK -->
 <section id="kontak">
 <h2>Kontak</h2>
+
 <div class="contact-box">
 <p>Email: 2513025042@students.unila.ac.id</p>
 </div>
@@ -278,8 +312,10 @@ Saya memiliki pengalaman dalam mempelajari HTML, CSS, dan JavaScript. Saya juga 
 <div class="contact-box">
 <p>LinkedIn: Tyas Syafa</p>
 </div>
+
 </section>
 
+<!-- FOOTER -->
 <footer>
 © 2026 Tyas Syafa Pratiwi
 </footer>
